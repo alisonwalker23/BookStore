@@ -1,0 +1,19 @@
+<h2 style="text-align: center;">Login to your account</h2>
+<form class="login-form">
+  <p>{{errorMessage}}</p>
+  <mat-form-field class="example-full-width" appearance="outline">
+    <mat-label>Username</mat-label>
+    <input type="text" matInput placeholder="Enter your username" [(ngModel)]="user.username" name="username">
+  </mat-form-field>
+
+  <form class="example-form">
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>Password</mat-label>
+      <input (keydown.enter)="login()" type="password" matInput placeholder="Enter your password" [(ngModel)]="user.password" name="password">
+    </mat-form-field>
+  </form>
+  <button id="login" mat-raised-button color="warn" (click)="login()" >Login</button>
+  <h2 class="question">Do you need to create an account?</h2>
+  <button mat-raised-button color="warn" class="registerbutton" (click)="gotoSignup()">Register</button>
+  
+

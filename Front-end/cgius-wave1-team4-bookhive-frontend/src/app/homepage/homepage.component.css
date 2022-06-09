@@ -1,0 +1,113 @@
+div{
+    background: url(https://th.bing.com/th/id/R.8bb0d6f5b0a098ceac08ab3d47e9f1e7?rik=Z18Mi8WfPeTB%2fg&pid=ImgRaw&r=0);
+    background-repeat: repeat;
+    background-size: 400px;
+    width:100%;
+    height: 1000px;
+}
+
+.tabs {
+    background-color: rgba(255, 255, 255, 0.80);
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+h3{
+    font-size: 3em;
+    text-align: center;
+    justify-content: center;
+    padding: 50px;
+    color:black
+}
+
+h2 {
+    font-family: 'Century Gothic';
+    color: white !important;
+    display: flex;
+    justify-content: center;
+    font-size: 5em;
+    padding-top: 50px;
+    padding-bottom: 35px;
+    color: #fff;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+    animation: pulsate 1.5s infinite alternate;
+             
+}
+
+@keyframes pulsate {
+    100% {
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #0fa,
+        0 0 80px #0fa,
+        0 0 90px #0fa,
+        0 0 100px #0fa,
+        0 0 150px #0fa;
+    }
+    0% {
+      text-shadow:
+      0 0 2px #fff,
+      0 0 4px #fff,
+      0 0 6px #fff,
+      0 0 10px #0fa,
+      0 0 45px #0fa,
+      0 0 55px #0fa,
+      0 0 70px #0fa,
+      0 0 80px #0fa;
+    }
+}
+
+button {
+    border-radius: 20px;
+    background-color: rgb(86, 128, 206) !important;
+    margin-left: 48%;
+    filter: drop-shadow(10px 10px 10px #bbfdd8);
+    margin-bottom: 20px;
+}
+
+.mask {
+     background-image: linear-gradient(90deg,rgba(137,210,182,0.50) 10%, rgba(136,208,84,0.50) 25%,
+     rgba(86,128,206,0.50) 50%, rgba(206,86,86,0.50) 75%, rgba(137,210,182,0.50) 90%);
+     background-size: 100% 1100%;
+     height: 1000px;
+     width: 100vw;
+}
+  
+
+@media (max-width: 576px) {
+    h2 {
+        font-size: 2.7em;
+    }
+    h3 {
+        font-size: 1.9em;
+    }
+    button {
+        margin-left: 40%;
+    }
+}
+
+@media (min-width:579px) and (max-width: 879px) {
+    h2 {
+        font-size: 4em;
+    }
+    h3 {
+        font-size: 2.5em;
+    }
+    button {
+        margin-left: 45%;
+    }
+}
+
+
+

@@ -1,0 +1,154 @@
+[{
+  "_id": 102,
+  "title": "Harry Potter Baking Book",
+  "description": "Yumm food",
+  "price": 19.88,
+  "category": "Cookbook",
+  "image": "https://images-na.ssl-images-amazon.com/images/I/51a7LYyGluL._SX402_BO1,204,203,200_.jpg",
+  "quantity": 10,
+  "authorName": "Johanna Last"
+},{
+  "_id": 104,
+  "title": "The Hobbit",
+  "description": "Wizard, hobbits, dwarf ppl and elves stuff go crazy",
+  "price": 10.99,
+  "category": "Adventure",
+  "image": "https://images-na.ssl-images-amazon.com/images/I/51phEoA5C9L._SX218_BO1,204,203,200_QL40_FMwebp_.jpg",
+  "quantity": 10,
+  "authorName": "J. R. R. Tolkien"
+},{
+  "_id": 105,
+  "title": "Xenocide",
+  "description": "Aliens nice, pls don't kill",
+  "price": 7.99,
+  "category": "Science Fiction",
+  "image": "https://images-na.ssl-images-amazon.com/images/I/51WT7wA6S0L._SX340_BO1,204,203,200_.jpg",
+  "quantity": 15,
+  "authorName": "Orson Scott Card"
+},{
+  "_id": 106,
+  "title": "Speaker for the Dead",
+  "description": "Aliens nice, pls don't kill",
+  "price": 8.99,
+  "category": "Science Fiction",
+  "image": "https://images-na.ssl-images-amazon.com/images/I/51v2nBeW4BL._SX304_BO1,204,203,200_.jpg",
+  "quantity": 17,
+  "authorName": "Orson Scott Card"
+},{
+  "_id": 107,
+  "title": "Children of the Mind",
+  "description": "Aliens nice, pls don't kill",
+  "price": 8.99,
+  "category": "Science Fiction",
+  "image": "https://images-na.ssl-images-amazon.com/images/I/51hq1sieTFL._SX304_BO1,204,203,200_.jpg",
+  "quantity": 11,
+  "authorName": "Orson Scott Card"
+},{
+  "_id": 108,
+  "title": "Breaking Dawn",
+  "description": "Vampires are shiny",
+  "price": 11.99,
+  "category": "Romance",
+  "image": "https://images-na.ssl-images-amazon.com/images/I/51aJxTeUHbL.jpg",
+  "quantity": 10,
+  "authorName": "Stephanie Meyer"
+},{
+  "_id": 109,
+  "title": "Dune",
+  "description": "Dessert is hot, worms big",
+  "price": 12.01,
+  "category": "Fantasy",
+  "image": "https://images-na.ssl-images-amazon.com/images/I/41rxoi1jMQL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg",
+  "quantity": 11,
+  "authorName": "Frank Herbert"
+},{
+  "_id": 110,
+  "title": "Secrets of Dumbledore",
+  "description": "Fly, wizards, rawr",
+  "price": 12.99,
+  "category": "Fantasy",
+  "image": "https://images-na.ssl-images-amazon.com/images/I/515joInqXDL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg",
+  "quantity": 11,
+  "authorName": "J. K. Rowling"
+},{
+  "_id": 111,
+  "title": "Lord of the Rings",
+  "description": "Hobbits traveling again",
+  "price": 10.99,
+  "category": "Fantasy",
+  "image": "https://images-na.ssl-images-amazon.com/images/I/41C34DME2eL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg",
+  "quantity": 12,
+  "authorName": "J. R. R. Tolkien"
+},{
+  "_id": 120,
+  "title": "Divergent",
+  "description": "Tris and Four have strange names but hide from scary lady well",
+  "price": 11.49,
+  "category": "Action",
+  "image": "https://images-na.ssl-images-amazon.com/images/I/51se7EuDP4L._SY291_BO1,204,203,200_QL40_FMwebp_.jpg",
+  "quantity": 12,
+  "authorName": "Veronica Roth"
+},{
+  "_id": 121,
+  "title": "Oh, the Places You'll Go!",
+  "description": "Soaring to high heights",
+  "price": 7.49,
+  "category": "Childrens",
+  "image": "https://images-na.ssl-images-amazon.com/images/I/51x8pmqjY0L._SX218_BO1,204,203,200_QL40_FMwebp_.jpg",
+  "quantity": 11,
+  "authorName": "Dr. Suess"
+},{
+  "_id": 122,
+  "title": "Atomic Habits",
+  "description": "Proven framework for improving",
+  "price": 11.99,
+  "category": "Self-Help",
+  "image": "https://images-na.ssl-images-amazon.com/images/I/51-uspgqWIL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg",
+  "quantity": 9,
+  "authorName": "James Clear"
+},{
+  "_id": 123,
+  "title": "November 9",
+  "description": "Fallon meets Ben, an aspiring novelist",
+  "price": 11.92,
+  "category": "Romance",
+  "image": "https://images-na.ssl-images-amazon.com/images/I/41HB7HlN27L._SY291_BO1,204,203,200_QL40_FMwebp_.jpg",
+  "quantity": 21,
+  "authorName": "Colleen Hoover"
+},{
+  "_id": 124,
+  "title": "The Alchemist",
+  "description": "Combining magic, mysticism, wisdom and wonder",
+  "price": 8.89,
+  "category": "Fiction",
+  "image": "https://images-na.ssl-images-amazon.com/images/I/51kcX5PpaZL._SX329_BO1,204,203,200_.jpg",
+  "quantity": 2,
+  "authorName": "Paulo Coelho"
+},{
+  "_id": 125,
+  "title": "1984",
+  "description": "Winston Smith toes the Party line",
+  "price": 7.48,
+  "category": "Fiction",
+  "image": "https://images-na.ssl-images-amazon.com/images/I/41t+5gUqXYL._SY344_BO1,204,203,200_.jpg",
+  "quantity": 24,
+  "authorName": "George Orwell"
+},{
+  "_id": 126,
+  "title": "The Adventures of Captain Underpants",
+  "description": "George and Harold are class clowns",
+  "price": 6.98,
+  "category": "Fiction",
+  "image": "https://images-na.ssl-images-amazon.com/images/I/51graYZQCyL._SX336_BO1,204,203,200_.jpg",
+  "quantity": 14,
+  "authorName": "George Orwell"
+},{
+  "_id": 127,
+  "title": "Happy-Go-Lucky",
+  "description": "Back when restaurant menus were still printed on paper",
+  "price": 18.78,
+  "category": "Essay",
+  "image": "https://images-na.ssl-images-amazon.com/images/I/41LcA4hm+aL._SX322_BO1,204,203,200_.jpg",
+  "quantity": 16,
+  "authorName": "David Sedaris"
+}]

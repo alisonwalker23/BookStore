@@ -1,0 +1,75 @@
+<div class="topofpage">
+<div class="accountdetails">
+  <h2 style="text-align: left;">Welcome, {{this.user.username}}</h2>
+<h2 style="text-align: left;">{{this.user.name}}'s Account Details</h2>
+<p style="text-align:left"> ID: {{this.user.id}}</p>
+<p style="text-align:left"> Name: {{this.user.name}}</p>
+<p style="text-align:left"> Username: {{this.user.username}}</p>
+<p style="text-align:left"> Email Address: {{this.user.emailAddress}}</p>
+<p style="text-align:left"> Shipping Address: {{this.user.shippingAddress}}</p>
+</div>
+
+<div class="bg">
+  <div class="book1">
+    <div class="ribbon1">
+    </div>
+    <div class="bookCut">
+    </div>
+  </div>
+   <div class="book2">
+     <div class="ribbonCut1"></div>
+     <div class="ribbonCut2"></div>
+     <div class="ribbonCut3"></div>
+   </div>
+  
+   <div class="book3">
+     <div class="ribbon3">
+    </div>
+    <div class="bookCut3">
+    </div>
+  </div>
+  <div class="book4">
+    <div class="ribbonCut4"></div>
+     <div class="ribbonCut5"></div>
+     <div class="ribbonCut6"></div>
+  </div>
+  <div class="book5"></div>
+  <div class="book6">
+    <div class="ribbon6">
+    </div>
+    <div class="bookCut6">
+    </div>
+  </div>
+  <div class="book7">
+    <div class="ribbonCut7"></div>
+     <div class="ribbonCut8"></div>
+     <div class="ribbonCut9"></div>
+  </div>
+</div>
+</div>
+
+
+
+
+<h3 style="text-align: left;">Past purchase history</h3>
+
+<div class="card-container">
+    <div *ngFor="let order of orders">
+
+    <mat-card id="grabcard" class="ordercard" (click)="viewOrder(this.order)">
+        <mat-card-header>
+          <mat-card-title class="headertitle">Order #{{order.orderId}}</mat-card-title>
+          <mat-card-subtitle class="headerstatus">{{order.status}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content class="statusorder">
+          View details
+        </mat-card-content>
+      </mat-card>
+    </div>
+    </div>
+
+
+    
+
+
+

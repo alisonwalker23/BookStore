@@ -1,0 +1,78 @@
+.card-container{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.firstsection {
+    display: flex;
+    flex-direction: column;
+    padding-right: 5px;
+}
+
+h2 {
+    margin-top: 20px;
+    font-family: 'Century Gothic';
+}
+
+.secondsection {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+    justify-content: center;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 15px;
+    justify-content: center;
+}
+
+.bookcard {
+    max-width: 320px;
+    height: 600px;
+    margin: 10px;
+}
+
+.actionsclass {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.actionprice {
+    padding-left: 9px;
+    padding-top: 15px;
+}
+
+button {
+    border-radius: 20px;
+    background-color: rgb(86, 128, 206) !important;
+    filter: drop-shadow(10px 10px 10px #bbfdd8);
+}
+
+.headercontainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.goToOrders {
+    margin: 20px;
+}
+
+img {
+    height: 400px;
+    width: 100px;
+    margin-bottom: 10px;
+}

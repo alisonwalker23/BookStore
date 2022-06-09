@@ -1,0 +1,38 @@
+
+.dialog-container {
+    padding: 20px;
+    margin: 0px;
+    border-style: dotted;
+    display: flex;
+    flex-direction: column;
+}
+
+.iconFull {
+    padding-top: 3px;
+    padding-left: 5px;
+}
+
+.shipped {
+    display: flex;
+    flex-direction: row;
+    color: rgb(35, 211, 123);
+    text-transform: capitalize;
+}
+
+.pending {
+    display: flex;
+    flex-direction: row;
+    color: rgb(255, 65, 65);
+    text-transform: capitalize;
+}
+
+.order {
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+}
+
+button {
+    border-radius: 20px;
+    background-color: rgb(189, 78, 109) !important;
+    color: white;
+}

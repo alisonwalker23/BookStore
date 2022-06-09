@@ -1,0 +1,17 @@
+<div class="form-container">
+  <h3>Update Order Status</h3>
+  <div class="form-container">
+    <div class="firstsection">
+
+      <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Order Status</mat-label>
+        <input matInput  placeholder="Enter current status"  [(ngModel)]="order.status" >
+      </mat-form-field>
+      <button mat-raised-button color="primary" (click)="editOrderStatus(order)">Update</button>
+    </div>
+  </div>
+</div>
+
+
+
+

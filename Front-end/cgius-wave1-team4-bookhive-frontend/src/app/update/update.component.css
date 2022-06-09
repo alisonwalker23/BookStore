@@ -1,0 +1,15 @@
+h3 {
+    color: rgb(255, 0, 115)
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+    justify-content: center;
+}
+button {
+    border-radius: 20px;
+    background-color: rgb(86, 128, 206) !important
+}

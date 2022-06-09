@@ -1,0 +1,37 @@
+
+<h2 style="text-align: center; margin-top: 20px; font-family:'Century Gothic'; font-size: 2em;">Your Cart</h2>
+
+<div class="topofpage">
+<h2 style="text-align: center; margin-top: 20px; font-family:'Century Gothic'; font-size: 2em; margin-right: 20px; padding-bottom: 4px;">Total: ${{totalCart.toFixed(2)}}</h2>
+<button style="color:white; filter: drop-shadow(10px 10px 10px #bbfdd8);" mat-raised-button class="checkoutbutton" (click)="gotoCheckout()">Checkout</button>
+</div>
+
+<div class="card-container">
+    <div *ngFor="let bookOrder of bookOrders">
+      <mat-card class="bookcard">
+        <div class="topcard">
+          <mat-card-header class="headercontainer">
+              <!-- <mat-card-title>{{book.id}}</mat-card-title> -->
+            <mat-card-title class="headertitle">{{bookOrder.title}}</mat-card-title>
+            <!-- <mat-card-subtitle>{{book.price}}</mat-card-subtitle>
+            <mat-card-subtitle>{{book.category}}</mat-card-subtitle>-->
+            <mat-card-subtitle>{{bookOrder.authorName}}</mat-card-subtitle>
+            <div class="subtitles">
+            <mat-card-subtitle>{{bookOrder.category}}</mat-card-subtitle>
+          </div>
+          </mat-card-header>
+          <mat-card-content>
+            <img  class="headertitle" src="{{bookOrder.image}}" alt="{{book.title}}" style="width:18rem">
+            <p class="bookdescription">{{bookOrder.description}}</p>
+            
+        </mat-card-content>
+      </div>
+        <mat-card-actions class="actionsclass">
+          <p class="actionprice">Price: ${{bookOrder.price}}</p>
+          <button mat-icon-button color="warn" style="color:white; background-color: rgb(255, 73, 73) !important;" (click)="delete(bookOrder)">	<mat-icon>delete</mat-icon></button >
+        </mat-card-actions>
+        </mat-card>
+
+    </div>
+    </div>
+   

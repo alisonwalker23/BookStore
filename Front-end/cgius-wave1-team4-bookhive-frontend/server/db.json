@@ -1,0 +1,138 @@
+{
+  "books": [
+    {
+      "id": 2,
+      "title": "book2",
+      "price": 10,
+      "category": "history",
+      "availability": 154
+    },
+    {
+      "id": 9,
+      "title": "book12",
+      "price": 90,
+      "category": "history",
+      "availability": "10"
+    },
+    {
+      "id": "10",
+      "title": "angular",
+      "price": "44",
+      "category": "coding",
+      "availability": "110"
+    }
+  ],
+  "cart": [
+    {}
+  ],
+  "order": [
+    {
+      "id": 2,
+      "books": "bookOrder2",
+      "userId": 100
+    },
+    {
+      "id": 3,
+      "books": "bookOrder1",
+      "userId": 200
+    },
+    {
+      "id": 4,
+      "books": "bookOrder2",
+      "userId": 200
+    }
+  ],
+  "user": [
+    {
+      "id": 1,
+      "name": "michael",
+      "username": "name",
+      "password": "password",
+      "emailAddress": "@gemil",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "name": "",
+      "username": "",
+      "password": "",
+      "emailAddress": "",
+      "role": ""
+    },
+    {
+      "id": 3,
+      "name": "michael",
+      "username": "mconley",
+      "password": "1234",
+      "emailAddress": "m@gmail.com",
+      "role": ""
+    },
+    {
+      "username": "",
+      "password": "",
+      "id": 4
+    },
+    {
+      "username": "",
+      "password": "",
+      "id": 5
+    },
+    {
+      "username": "admin",
+      "password": "password",
+      "id": 6
+    },
+    {
+      "username": "asdf",
+      "password": "asdf",
+      "id": 7
+    }
+  ],
+  "userBooks": [
+    {
+      "userId": 1001,
+      "books": [
+        {
+          "id": 10,
+          "title": "angular",
+          "price": 100,
+          "category": "coding"
+        }
+      ]
+    },
+    {
+      "userId": 1001,
+      "books": [
+        {
+          "id": 10,
+          "title": "angular",
+          "price": 100,
+          "category": "coding"
+        }
+      ]
+    },
+    {
+      "userId": 1002,
+      "books": [
+        {
+          "id": 10,
+          "title": "angular",
+          "price": 100,
+          "category": "coding"
+        }
+      ]
+    },
+    {
+      "userId": 1002,
+      "books": [
+        {
+          "id": 10,
+          "title": "angular",
+          "price": 100,
+          "category": "coding"
+        }
+      ]
+    }
+
+  ]
+}

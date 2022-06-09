@@ -1,0 +1,88 @@
+.mat-toolbar{
+/* background: linear-gradient(90deg, rgba(137,210,182,1) 10%, rgba(136,208,84,1) 25%,
+ rgba(86,128,206,1) 50%, rgba(206,86,86,1) 75%, rgba(137,210,182,1) 90%); */
+ animation: animateBg 13s ease infinite;
+ background-image: linear-gradient(270deg,rgba(137,210,182,1) 10%, rgba(136,208,84,1) 25%,
+ rgba(86,128,206,1) 50%, rgba(206,86,86,1) 75%, rgba(137,210,182,1) 90%);
+ background-size: 600% 600%;
+}
+
+@keyframes animateBg {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+nav a{
+    text-decoration: none;
+    font-family: 'Century Gothic';
+    font-size: 18px;
+    color: black;
+    margin-right: 10px;
+    background-color: rgba(137,210,182,1);
+    border-radius: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+h2{
+    font-family: 'Century Gothic';
+}
+  
+nav{
+    margin-left: auto ;
+}
+.mat-menu{
+    text-size-adjust: 100px;
+}
+nav span{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.store {
+    background-color: rgb(136, 208, 84);
+}
+
+.cart{
+    background-color: rgb(86, 128, 206);
+    margin: 5px;
+}
+
+.userProfile{
+    background-color: rgb(206, 86, 86);
+}
+
+.home{
+    background-color: rgba(137,210,182,1);
+    margin: 5px;
+}
+
+.menuicons1{
+    color: rgb(86, 128, 206);
+    border-radius: 50%;
+}
+.menuicons2{
+    color: rgb(206, 86, 86);
+    border-radius: 50%;
+}
+.menuicons3{
+    color: rgb(136, 208, 84);
+    border-radius: 50%;
+}
+.menuicons4{
+    color: rgb(86, 128, 206);
+    border-radius: 50%;
+}
+.menuicons5{
+    color: rgb(206, 86, 86);
+    border-radius: 50%;
+}
+
+img {
+    width: 45px;
+    height: 30px;
+    padding-right: 10px;
+}
+
+

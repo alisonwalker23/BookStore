@@ -1,0 +1,23 @@
+
+<div class="dialog-container">
+<h1 style="font-family:'Century Gothic';" class="order">Order #{{order.orderId}}</h1>
+<div *ngIf="fulfilled" class="shipped">
+<h2>{{order.status}}</h2>
+<mat-icon class="iconFull">sentiment_very_satisfied</mat-icon>
+</div>
+
+<div *ngIf="notFulfilled" class="pending">
+<h2>{{order.status}}</h2>
+<mat-icon class="iconFull">sentiment_very_dissatisfied</mat-icon>
+</div>
+
+    <div>
+        <div  class="content">
+        <div *ngFor="let bookOrder of bookOrders">
+            <p class="content"></p><button mat-raised-button  class="content" (click)="openBook(bookOrder)">{{bookOrder.title}}</button>
+        </div>
+        </div>
+        <h3 style="text-align: left; margin-top: 20px; font-family:'Century Gothic'; margin-right: 10px; margin-bottom: 0px; ">Total: ${{totalCart.toFixed(2)}}</h3>
+    </div>
+</div>
+

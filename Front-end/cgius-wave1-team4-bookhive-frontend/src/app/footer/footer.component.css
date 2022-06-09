@@ -1,0 +1,23 @@
+footer {
+    background: url(https://th.bing.com/th/id/R.8bb0d6f5b0a098ceac08ab3d47e9f1e7?rik=Z18Mi8WfPeTB%2fg&pid=ImgRaw&r=0);
+    background-repeat: repeat-x;
+    background-size: 320px;
+    color: white !important;
+    height: 300px;
+    /* position: fixed; */
+    /* bottom: 0; */
+    width:100%;
+}
+
+.footer-mask {
+    background: linear-gradient(90deg, rgba(137,210,182,0.50) 10%, rgba(136,208,84,0.50) 25%, rgba(86,128,206,0.50) 50%, rgba(206,86,86,0.50) 75%, rgba(137,210,182,0.50) 90%);
+    padding-top: 0.1px;
+}
+
+@media (max-width: 740px) {
+    footer {
+        height: 850px;
+        background-repeat: repeat;
+    }
+}
+

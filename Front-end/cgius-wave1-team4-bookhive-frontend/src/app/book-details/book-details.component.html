@@ -1,0 +1,35 @@
+<!-- <div class="image">
+    <img src="{{book.image}}" alt="">
+    <div class="bookdetails">
+    <h2>{{book.title}}</h2>
+    </div>
+    <mat-icon>delete</mat-icon>
+</div> -->
+  <div class="card-container">
+    <img class="headertitle" src="{{book.image}}" alt="{{book.title}}" style="width:18rem">
+    <mat-card class="bookcard" style="width: 300px;">
+        <mat-card-header class="headercontainer">
+            <!-- <mat-card-title>{{book.id}}</mat-card-title> -->
+          <mat-card-title class="headertitle">{{book.title}}</mat-card-title>
+          <!-- <mat-card-subtitle>{{book.price}}</mat-card-subtitle>
+          <mat-card-subtitle>{{book.category}}</mat-card-subtitle>-->
+          <mat-card-subtitle>By {{book.authorName}}</mat-card-subtitle>
+          <div class="subtitles">
+          <mat-card-subtitle class="closeButton" (click)="closeBook()"><mat-icon>close</mat-icon></mat-card-subtitle>
+        </div>
+        </mat-card-header>
+        <mat-card-content>
+          <p>Genre: {{book.category}}</p>
+          <p class="bookdescription">Description: {{book.description}}</p>
+          
+      </mat-card-content>
+      <mat-card-actions class="actionsclass">
+        <p class="actionprice">Price: ${{book.price}}</p>
+        
+          <!-- <button mat-raised-button color="warn">Add to cart</button> -->
+      </mat-card-actions>
+      <p>Stock: {{book.quantity}}</p> 
+      
+      </mat-card>
+      <p class="copyrightFoot">© 2022 Copyright: Book Hive</p>
+    </div>

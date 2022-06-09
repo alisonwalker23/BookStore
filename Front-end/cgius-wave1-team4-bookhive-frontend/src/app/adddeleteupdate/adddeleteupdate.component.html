@@ -1,0 +1,84 @@
+
+<div class="container">
+<button style="background-color: rgb(242, 121, 46) !important; filter: drop-shadow(10px 10px 10px #fdbbbb);" class="goToOrders" mat-raised-button color="warn" (click)="updateOrder()">Update Order Status</button>
+<h2>Add New Book</h2>
+  <p>{{this.errorMessage}}</p>
+
+<div class = "form-container">
+ 
+  
+  <div class="firstsection">
+  
+    <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Reference Number</mat-label>
+        <input matInput placeholder="Enter book ID" [(ngModel)]="book.id">
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Title</mat-label>
+        <input matInput placeholder="Enter book title"  value="new Book"[(ngModel)]="book.title" >
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>Author</mat-label>
+      <input matInput placeholder="Enter book author" [(ngModel)]="book.authorName">
+  </mat-form-field>
+  <mat-form-field class="example-full-width" appearance="outline">
+    <mat-label>Description</mat-label>
+    <input matInput placeholder="Enter book description" [(ngModel)]="book.description">
+</mat-form-field>
+</div>
+<div class="secondsection">
+    <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Price</mat-label>
+        <input matInput placeholder="Enter book price" [(ngModel)]="book.price">
+    </mat-form-field>
+     <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Genre</mat-label>
+        <input matInput placeholder="Enter book genre" [(ngModel)]="book.category">
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>Quantity</mat-label>
+      <input matInput placeholder="Enter amount of stock" [(ngModel)]="book.quantity">
+  </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>Image Link</mat-label>
+      <input matInput placeholder="Upload image link" [(ngModel)]="book.image">
+  </mat-form-field>
+</div>
+  <!-- <input type="file" class="file" name="file" id="file" (change)="onFileChanged($event)" /> -->
+    
+
+</div>
+
+<button mat-raised-button color="warn" (click)="add()" >Add New Book</button>
+
+</div>
+
+<h2 style="text-align: center;">List of Available Books</h2>
+
+<div class="card-container">
+  <div *ngFor="let book of books">
+
+  <mat-card class="bookcard" >
+      <mat-card-header class="headercontainer">
+          <!-- <mat-card-title>{{book.id}}</mat-card-title> -->
+        <mat-card-title class="headertitle">{{book.title}}</mat-card-title>
+        <!-- <mat-card-subtitle>{{book.price}}</mat-card-subtitle>
+        <mat-card-subtitle>{{book.category}}</mat-card-subtitle>-->
+        <mat-card-subtitle>{{book.authorName}}</mat-card-subtitle>
+        <div class="subtitles">
+        <mat-card-subtitle>{{book.category}}</mat-card-subtitle>
+      </div>
+      </mat-card-header>
+      <mat-card-content>
+        <img class="headertitle" src="{{book.image}}" alt="{{book.title}}" style="width:18rem">
+        <p class="bookdescription">{{book.description}}</p>
+        
+    </mat-card-content>
+      <mat-card-actions class="actionsclass">
+        <p class="actionprice">Price: ${{book.price}}</p>
+          <button mat-raised-button color="warn" style="background-color: rgb(255, 67, 67) !important" (click)="delete(book.id)">Delete</button>
+          <button mat-raised-button color="warn" (click)="update(book)">Update</button>
+      </mat-card-actions>
+      </mat-card>
+    </div>
+    </div>

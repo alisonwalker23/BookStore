@@ -1,0 +1,52 @@
+<div class="scroll-container">
+<mat-toolbar class="searchrow">
+  <button mat-button class="genreMenu" [matMenuTriggerFor]="menu" (click)="populateGenres()">Genre</button>
+<mat-menu #menu="matMenu">
+  <button onclick="history.go(0)" class="genreMenuSpan" mat-menu-item><mat-icon class="menuicons1">import_contacts</mat-icon>
+    <span>View All</span></button>
+  <div *ngFor="let bookz of bookGenres">
+  <button class="genreMenuSpan" (click)="isSelected(bookz)" mat-menu-item><mat-icon class="menuicons1">import_contacts</mat-icon>
+    <span>{{bookz}}</span></button>
+  </div>
+</mat-menu>
+  <mat-form-field class="searchbar" appearance="outline">
+    <input class="searchtext" type="text" matInput placeholder="Search" [(ngModel)]="searchTerm">
+    </mat-form-field>
+    <button mat-icon-button class="searchicon"><mat-icon>search</mat-icon></button>
+</mat-toolbar>
+
+<div class="topheader">
+<h2 style="text-align: center; padding-top: 20px; font-family: 'Century Gothic'; font-size: 3em;">Book Store</h2>
+
+
+</div>
+
+<div class="card-container">
+  <div *ngFor="let book of books | filter: searchTerm | filter: selectedBrand">
+
+  <mat-card class="bookcard" id="bookcard">
+    <div (click)="openBook(book)" class="topcard">
+      <mat-card-header class="headercontainer">
+        <mat-card-title class="headertitle">{{book.title}}</mat-card-title>
+        <mat-card-subtitle>{{book.authorName}}</mat-card-subtitle>
+        <div class="subtitles">
+        <mat-card-subtitle>{{book.category}}</mat-card-subtitle>
+      </div>
+      </mat-card-header>
+      <mat-card-content>
+        <img  class="headertitle" src="{{book.image}}" alt="{{book.title}}" style="width:18rem">
+        <p class="bookdescription">{{book.description}}</p>
+
+    </mat-card-content>
+  </div>
+    <mat-card-actions class="actionsclass">
+      <p class="actionprice">Price: ${{book.price}}</p>
+        <button mat-raised-button color="warn" (click)="addToCard(book)" id="confetti-button">Add to cart</button>
+    </mat-card-actions>
+    </mat-card>
+  </div>
+  </div>
+</div>
+
+
+

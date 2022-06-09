@@ -1,0 +1,37 @@
+
+<mat-toolbar >
+  <img style="cursor: pointer;" src="https://maxcdn.icons8.com/Share/icon/ios7/Files/open_book1600.png" alt="" (click)="home()">
+  <h2 style="text-align: center; cursor: pointer;" (click)="home()">Book Hive</h2>
+  <!-- <span style="text-align: center;">Book Hive </span> -->
+
+  
+
+    <nav>
+      <button mat-icon-button class="home" (click)="home()">
+        <mat-icon>home</mat-icon>
+      </button>
+      <button mat-icon-button class="store" (click)="gotoShop()">
+        <mat-icon>store</mat-icon>
+      </button>
+      <button mat-icon-button class="cart" (click)="cart()">
+      	<mat-icon>shopping_cart</mat-icon>
+      </button>
+      
+      <button mat-icon-button class="userProfile" [matMenuTriggerFor]="menu">
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item (click)="userAccount()"><mat-icon class="menuicons1">account_circle</mat-icon>
+            <span>My Account</span></button>
+          <button mat-menu-item (click)="login()"><mat-icon class="menuicons2">lock</mat-icon>
+            <span>Login</span></button>
+          <button mat-menu-item (click)="signUp()">	<mat-icon class="menuicons3">add_circle</mat-icon><span>Register</span></button>
+          
+          <button mat-menu-item (click)="adminView()">	<mat-icon class="menuicons4">supervisor_account</mat-icon><span>Admin View</span></button>
+          <button mat-menu-item (click)="logout()"><mat-icon class="menuicons5">lock_open</mat-icon><span>Logout</span></button>
+        </mat-menu>
+      <mat-icon>account_circle</mat-icon>
+    </button>
+      
+      
+    </nav>
+  </mat-toolbar>
+

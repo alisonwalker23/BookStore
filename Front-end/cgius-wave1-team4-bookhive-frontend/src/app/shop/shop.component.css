@@ -1,0 +1,129 @@
+.card-container{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    filter: drop-shadow(10px 10px 10px #e2e9ff);
+}
+
+.scroll-container{
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.topcard{
+    cursor: pointer;
+}
+
+.bookcard {
+    max-width: 320px;
+    height: 600px;
+    margin: 10px;
+}
+
+.actionprice {
+    padding-left: 9px;
+    padding-top: 15px;
+}
+
+.headercontainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.actionsclass {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topheader {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.genreMenu {
+    background-color: rgba(255, 0, 25, 0.684) !important;
+    color: white;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    filter: drop-shadow(10px 10px 10px #A4BBFF);
+}
+
+.genreMenuSpan {
+    background-color: white !important;
+}
+
+.menuicons1{
+    color:rgba(136,208,84,1) !important;
+}
+
+img {
+    height: 400px;
+    width: 100px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+  button {
+    border-radius: 20px;
+    background-color: rgb(86, 186, 206) !important;
+}
+
+.mat-toolbar{
+    background: none;
+}
+
+.searchicon{
+    margin-bottom: 20px;
+    margin-left: 20px;
+    background-color: rgba(137,210,182,1) !important;
+    filter: drop-shadow(10px 10px 10px #A4BBFF);
+}
+
+.searchtext {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.searchbar {
+    width: 400px;
+}
+
+.searchrow {
+    padding-top: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchtext{
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

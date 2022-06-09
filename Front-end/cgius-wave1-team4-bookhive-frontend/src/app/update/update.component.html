@@ -1,0 +1,48 @@
+<div class = "form-container">
+    <h3>Update Book</h3>
+    <p>{{this.errorMessage}}</p>
+    <div class = "form-container">
+
+
+        <div class="firstsection">
+
+          <mat-form-field class="example-full-width" appearance="outline">
+              <mat-label>Reference Number</mat-label>
+              <input matInput placeholder="Enter book ID" [(ngModel)]="book.id">
+          </mat-form-field>
+          <mat-form-field class="example-full-width" appearance="outline">
+              <mat-label>Title</mat-label>
+              <input matInput placeholder="Enter book title"  value="new Book"[(ngModel)]="book.title" >
+          </mat-form-field>
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Author</mat-label>
+            <input matInput placeholder="Enter book author" [(ngModel)]="book.authorName">
+        </mat-form-field>
+        <mat-form-field class="example-full-width" appearance="outline">
+          <mat-label>Description</mat-label>
+          <input matInput placeholder="Enter book description" [(ngModel)]="book.description">
+      </mat-form-field>
+      </div>
+      <div class="secondsection">
+          <mat-form-field class="example-full-width" appearance="outline">
+              <mat-label>Price</mat-label>
+              <input matInput placeholder="Enter book price" [(ngModel)]="book.price">
+          </mat-form-field>
+           <mat-form-field class="example-full-width" appearance="outline">
+              <mat-label>Genre</mat-label>
+              <input matInput placeholder="Enter book genre" [(ngModel)]="book.category">
+          </mat-form-field>
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Quantity</mat-label>
+            <input matInput placeholder="Enter amount of stock" [(ngModel)]="book.quantity">
+        </mat-form-field>
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Image Link</mat-label>
+            <input matInput placeholder="Upload image link" [(ngModel)]="book.image">
+        </mat-form-field>
+      </div>
+
+    <button mat-raised-button color="warn" (click)="edit(book)">Update book</button>
+      </div>
+</div>
+
