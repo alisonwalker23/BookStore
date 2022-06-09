@@ -37,4 +37,4 @@ features during
 * npm i ng2-search-filter --save
 * npm install -g @angular/cli
 
-[Alison Walker](https://www.linkedin.com/in/alisonwalk/)
+[Alison Walker - LinkedIn](https://www.linkedin.com/in/alisonwalk/)
