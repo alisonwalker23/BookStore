@@ -38,3 +38,6 @@ features during
 * npm install -g @angular/cli
 
 [Alison Walker - LinkedIn](https://www.linkedin.com/in/alisonwalk/)
+
+<img src="BookShopPage.jpg">
+<img src="CheckoutPage.jpg">
